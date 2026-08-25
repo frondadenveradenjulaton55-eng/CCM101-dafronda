@@ -99,8 +99,3 @@ In addition, I practiced maintaining my Cloud Computing Portfolio through GitHub
 | **Connecting Linux resources to cloud concepts** | I categorized the collected information into compute, storage, networking, and operating-system resources.                |
 | **Organizing the documentation**                 | I used Markdown headings, tables, lists, and code formatting to present the technical information clearly.                |
 
-## Overall Learning
-
-This laboratory gave me practical experience investigating the infrastructure of a Linux server in a cloud-based environment. By examining the available compute, storage, networking, and operating-system resources, I gained a clearer understanding of how these components contribute to cloud computing.
-
-The activity also showed me the importance of documenting technical information before deploying infrastructure. Through this laboratory, I strengthened my Linux command-line skills, improved my Markdown documentation, and continued developing my GitHub Cloud Computing Portfolio.
