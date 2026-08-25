@@ -23,79 +23,91 @@ At the end of this laboratory activity, I was able to:
 
 ## Cloud Infrastructure Assessment
 
-The following information was collected from the KillerCoda Linux environment during the investigation:
-
-| Infrastructure Component | Findings                                                  |
-| ------------------------ | --------------------------------------------------------- |
-| **Compute Resources**    | Intel Xeon E312xx CPU, 1 CPU core, and 1.9 GiB RAM        |
-| **Storage Resources**    | Approximately 19G disk capacity with mounted file systems |
-| **Networking Resources** | IP addresses `172.30.1.2` and `172.17.0.1`                |
-| **Operating System**     | Ubuntu 24.04.4 LTS                                        |
-
-These resources demonstrate the basic infrastructure layers required for a functioning cloud-based server environment.
+| Infrastructure Component | Findings |
+|---|---|
+| **Operating System** | Ubuntu 24.04.4 LTS (Noble Numbat) |
+| **Kernel** | Linux `6.8.0-138-generic` |
+| **CPU** | Intel Xeon E312xx (Sandy Bridge, IBRS update) |
+| **CPU Cores** | 1 CPU and 1 core |
+| **Architecture** | x86_64 |
+| **RAM** | 1.9 GiB total |
+| **Swap** | 1.0 GiB total |
+| **Disk** | 20G virtual disk |
+| **Root Partition** | 19G mounted on `/` |
+| **Hostname** | `ubuntu` |
+| **Primary IP Address** | `172.30.1.2/24` |
+| **Docker IP Address** | `172.17.0.1/16` |
+| **Default Gateway** | `172.30.1.1` |
+| **Hypervisor** | KVM |
+| **Virtualization** | Full virtualization |
 
 ## Tools Used
 
-| Tool                       | Purpose                                                                         |
-| -------------------------- | ------------------------------------------------------------------------------- |
-| **KillerCoda Playground**  | Provided the Linux server environment used for the infrastructure investigation |
-| **Linux Terminal**         | Used to execute commands and collect system information                         |
-| **GitHub**                 | Used to organize, store, and maintain the Cloud Computing Portfolio             |
-| **Markdown**               | Used to create structured technical documentation                               |
-| **Web Browser**            | Used to access KillerCoda, GitHub, and official cloud-provider documentation    |
-| **Draw.io (diagrams.net)** | Used to create the cloud infrastructure architecture diagram                    |
+| Tool | Purpose |
+|---|---|
+| **KillerCoda Playground** | Provided the Linux server environment for the investigation |
+| **Linux Terminal** | Used to execute commands and collect system information |
+| **GitHub** | Used to organize and maintain the Cloud Computing Portfolio |
+| **Markdown** | Used to create structured technical documentation |
+| **Web Browser** | Used to access KillerCoda, GitHub, and cloud documentation |
+| **Draw.io (diagrams.net)** | Used to create the cloud infrastructure diagram |
 
 ## Linux Commands Executed
 
-| Command                      | Purpose                                         |
-| ---------------------------- | ----------------------------------------------- |
-| `cat /etc/os-release`        | Identify the operating system and version       |
-| `uname -r`                   | Determine the Linux kernel version              |
-| `lscpu \| grep "Model name"` | Identify the CPU model                          |
-| `nproc`                      | Determine the number of available CPU cores     |
-| `free -h`                    | Check available and total memory                |
-| `df -h`                      | Examine disk capacity and usage                 |
-| `findmnt`                    | Identify mounted file systems                   |
-| `hostname`                   | Determine the server hostname                   |
-| `hostname -I`                | Display the IP addresses assigned to the system |
+| Command | Purpose |
+|---|---|
+| `cat /etc/os-release` | Identify the operating system and version |
+| `uname -r` | Identify the Linux kernel version |
+| `lscpu` | Investigate CPU architecture, model, cores, and virtualization |
+| `nproc` | Determine the number of available CPU cores |
+| `free -h` | Check RAM and swap memory |
+| `df -h` | Check filesystem capacity and usage |
+| `lsblk` | Identify disks and partitions |
+| `hostname` | Identify the server hostname |
+| `ip addr` | Identify network interfaces and IP addresses |
+| `ip route` | Identify network routes and the default gateway |
+| `mount \| column -t` | Examine mounted filesystems |
 
 ## Cloud Infrastructure Components
 
 ### Compute Resources
 
-The Intel Xeon E312xx CPU and the available CPU core represent the compute resources of the Linux environment. Compute resources are responsible for processing instructions and running applications and services.
+The Linux environment uses an Intel Xeon E312xx processor with one available CPU core. The system uses the x86_64 architecture and runs under the KVM hypervisor with full virtualization.
 
 ### Storage Resources
 
-The Linux environment provides approximately 19G of disk capacity along with mounted file systems. Storage is important because it provides persistent space for the operating system, applications, configuration files, and other data.
+The system contains a 20G virtual disk named `/dev/vda`. The main partition `/dev/vda1` provides 19G of storage and is mounted at `/`.
 
 ### Networking Resources
 
-The IP addresses `172.30.1.2` and `172.17.0.1` demonstrate the networking resources available in the environment. Networking allows the server to communicate with other systems and services.
+The primary network interface is `enp1s0`, which uses the IPv4 address `172.30.1.2/24`. The system also has a Docker network interface using `172.17.0.1/16`. The default gateway is `172.30.1.1`.
 
 ### Operating System
 
-The server is running Ubuntu 24.04.4 LTS. The operating system manages system resources and provides the environment required for commands, applications, and services to run.
+The server runs Ubuntu 24.04.4 LTS with Linux kernel version `6.8.0-138-generic`.
 
 ### Identity and Access Management
 
-Identity and access management is responsible for controlling access to cloud resources. It helps determine which users, applications, or services are allowed to access specific resources and what actions they can perform.
+Identity and access management controls access to cloud resources by determining which users and services can access resources and what actions they are permitted to perform.
+
+The KillerCoda investigation did not provide specific cloud IAM users, roles, or permissions, so no specific IAM configuration is claimed in this report.
 
 ## Skills Learned
 
-During this laboratory activity, I learned how to investigate a Linux server using command-line tools and interpret the information returned by those commands. I was able to identify important system resources, including the operating system, kernel, CPU, CPU cores, RAM, disk capacity, mounted file systems, hostname, and IP addresses.
+I learned how to investigate a Linux server using command-line tools and interpret system information. I identified the operating system, kernel, CPU, memory, storage, filesystems, hostname, network interfaces, IP addresses, and routing information.
 
-I also improved my ability to organize technical information using Markdown tables, headings, lists, and code formatting. The activity gave me a better understanding of how compute, storage, networking, operating-system, and identity resources contribute to cloud infrastructure.
+I also improved my ability to organize technical information using Markdown tables, headings, lists, and code formatting. The activity helped me understand how compute, storage, networking, virtualization, and operating-system resources contribute to a cloud environment.
 
-In addition, I practiced maintaining my Cloud Computing Portfolio through GitHub and learned how technical findings can be documented in a structured and professional way.
+In addition, I practiced maintaining my Cloud Computing Portfolio through GitHub and learned the importance of documenting technical findings before planning a cloud deployment.
 
 ## Challenges Encountered
 
-| Challenge                                        | How I Addressed It                                                                                                        |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **Understanding the Linux system information**   | I reviewed the output of each command and identified which values corresponded to the required infrastructure components. |
-| **Interpreting mounted file systems**            | I used the `findmnt` command and examined the displayed mount points and file-system information.                         |
-| **Identifying network information**              | I used `hostname -I` and reviewed the IP addresses assigned to the Linux environment.                                     |
-| **Connecting Linux resources to cloud concepts** | I categorized the collected information into compute, storage, networking, and operating-system resources.                |
-| **Organizing the documentation**                 | I used Markdown headings, tables, lists, and code formatting to present the technical information clearly.                |
-
+| Challenge | How I Addressed It |
+|---|---|
+| **Understanding CPU information** | I reviewed the `lscpu` output to identify the CPU model, architecture, CPU count, cores, and virtualization information. |
+| **Interpreting memory information** | I used `free -h` to identify total, used, available, and swap memory. |
+| **Understanding disk partitions** | I compared `lsblk` and `df -h` to identify the virtual disk, partitions, sizes, and mount points. |
+| **Understanding mounted filesystems** | I used `mount \| column -t` to examine the filesystem mount points and filesystem types. |
+| **Understanding network configuration** | I compared `ip addr` and `ip route` to identify interfaces, IP addresses, networks, and the default gateway. |
+| **Connecting Linux resources to cloud concepts** | I organized the findings into compute, storage, networking, virtualization, and operating-system categories. |
+| **Organizing the documentation** | I used Markdown headings, tables, lists, and code formatting to make the technical information clear and organized. |
