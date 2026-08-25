@@ -29,9 +29,12 @@ Model name: Intel Xeon E312xx (Sandy Bridge, IBRS update)
 1
 
 ## Total RAM
+```text
                total        used        free      shared  buff/cache   available
 Mem:           1.9Gi       415Mi       867Mi       1.1Mi       788Mi       1.5Gi
 Swap:          1.0Gi          0B       1.0Gi
+
+```
 
 ## Disk Capacity
 
