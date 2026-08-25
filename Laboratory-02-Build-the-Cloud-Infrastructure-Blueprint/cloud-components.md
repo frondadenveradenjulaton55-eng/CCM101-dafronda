@@ -2,56 +2,40 @@
 
 ## Compute Resources
 
-### Purpose
+The Linux environment provided by KillerCoda uses an Intel Xeon E312xx (Sandy Bridge, IBRS update) processor. The system has 1 CPU and 1 CPU core, with an x86_64 architecture and 1.9 GiB of RAM.
 
-Compute resources provide processing capacity for applications and services.
+The purpose of compute resources is to provide the processing power and memory needed to run the operating system, applications, and other workloads.
 
-### Importance
+Compute resources are important in cloud computing because they allow applications and services to process information and perform tasks. Cloud providers allow these resources to be provisioned according to workload requirements.
 
-Cloud applications require compute resources to execute programs and process workloads.
-
-### KillerCoda
-
-The CPU and CPU cores available in the KillerCoda Linux environment are examples of compute resources.
+In the KillerCoda environment, the CPU and RAM provide the computing capacity used to operate the Ubuntu Linux server and execute the commands required for this laboratory.
 
 ## Storage Resources
 
-### Purpose
+The KillerCoda environment contains a 20G virtual disk, identified as /dev/vda. The main partition, /dev/vda1, has a capacity of 19G and is mounted on /. The root filesystem uses the ext4 filesystem, with approximately 5.4G used and 13G available.
 
-Storage provides space for operating-system files, applications, and data.
+The purpose of storage resources is to provide space for the operating system, applications, configuration files, and other data.
 
-### Importance
+Storage is important in cloud computing because applications and services need a place to store and retrieve data. Cloud environments provide different types of storage depending on whether workloads require persistent disks, files, or other forms of data storage.
 
-Cloud workloads require persistent storage for information that must be retained.
-
-### KillerCoda
-
-The disks and mounted file systems in the Linux environment represent storage resources.
+In the KillerCoda environment, the virtual disk provides the storage required by Ubuntu and the files and applications running on the Linux server.
 
 ## Networking Resources
 
-### Purpose
+The KillerCoda Linux environment has a primary network interface called enp1s0 with the IPv4 address 172.30.1.2/24. The system also has a Docker network interface called docker0, using 172.17.0.1/16. The default gateway is 172.30.1.1.
 
-Networking allows systems to communicate with other systems and services.
+The purpose of networking resources is to allow computers, applications, and services to communicate with each other.
 
-### Importance
+Networking is important in cloud computing because cloud resources need to communicate with users, applications, databases, and other services. Proper networking allows workloads to exchange data and connect to external or internal resources.
 
-Cloud applications depend on networking for users, APIs, and communication between services.
-
-### KillerCoda
-
-Network interfaces, IP addresses, and routing information in KillerCoda demonstrate networking resources.
+In the KillerCoda environment, the enp1s0 interface provides the main network connection for the Linux server, while docker0 provides a network used by Docker. The routing configuration allows the server to communicate through the configured network and default gateway.
 
 ## Operating System
 
-### Purpose
+The Linux environment provided by KillerCoda is running Ubuntu 24.04.4 LTS (Noble Numbat) with Linux kernel version 6.8.0-138-generic.
 
-The operating system manages hardware resources and provides an environment for applications.
+The purpose of an operating system is to manage the computer's hardware and software resources and provide an environment where applications and commands can run.
 
-### Importance
+The operating system is important in cloud computing because cloud servers require an operating system to manage compute, memory, storage, networking, and applications. It also provides the command-line and system-management tools needed to administer a server.
 
-Cloud servers require an operating system to manage resources and run workloads.
-
-### KillerCoda
-
-The Linux operating system provided by KillerCoda is the operating-system component of the environment.
+In the KillerCoda environment, Ubuntu provides the operating system used to interact with the virtual server. The Linux commands used during this laboratory, such as lscpu, free, df, lsblk, ip addr, and ip route, allow the infrastructure resources to be investigated and managed.
