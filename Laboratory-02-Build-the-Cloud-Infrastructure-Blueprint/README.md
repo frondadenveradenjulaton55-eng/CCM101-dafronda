@@ -21,25 +21,15 @@ At the end of this laboratory activity, I was able to:
 * Create organized and professional technical documentation using Markdown.
 * Continue developing a structured Cloud Computing Portfolio using GitHub.
 
-## Cloud Infrastructure Assessment
+## Cloud Infrastructure Components
 
-| Infrastructure Component | Findings |
-|---|---|
-| **Operating System** | Ubuntu 24.04.4 LTS (Noble Numbat) |
-| **Kernel** | Linux `6.8.0-138-generic` |
-| **CPU** | Intel Xeon E312xx (Sandy Bridge, IBRS update) |
-| **CPU Cores** | 1 CPU and 1 core |
-| **Architecture** | x86_64 |
-| **RAM** | 1.9 GiB total |
-| **Swap** | 1.0 GiB total |
-| **Disk** | 20G virtual disk |
-| **Root Partition** | 19G mounted on `/` |
-| **Hostname** | `ubuntu` |
-| **Primary IP Address** | `172.30.1.2/24` |
-| **Docker IP Address** | `172.17.0.1/16` |
-| **Default Gateway** | `172.30.1.1` |
-| **Hypervisor** | KVM |
-| **Virtualization** | Full virtualization |
+| Infrastructure Component | Findings                                                                                             |
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Operating System**     | Ubuntu 24.04.4 LTS (Noble Numbat), running Linux kernel `6.8.0-138-generic`                          |
+| **Compute Resources**    | Intel Xeon E312xx (Sandy Bridge, IBRS update), 1 CPU, 1 core, x86_64 architecture, with 1.9 GiB RAM  |
+| **Storage Resources**    | 20G virtual disk (`/dev/vda`), with a 19G root partition mounted on `/`; approximately 13G available |
+| **Networking Resources** | Primary IP `172.30.1.2/24`, Docker network `172.17.0.1/16`, and default gateway `172.30.1.1`         |
+
 
 ## Tools Used
 
