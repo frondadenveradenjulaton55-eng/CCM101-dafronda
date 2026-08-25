@@ -68,30 +68,6 @@ At the end of this laboratory activity, I was able to:
 | `ip route` | Identify network routes and the default gateway |
 | `mount \| column -t` | Examine mounted filesystems |
 
-## Cloud Infrastructure Components
-
-### Compute Resources
-
-The Linux environment uses an Intel Xeon E312xx processor with one available CPU core. The system uses the x86_64 architecture and runs under the KVM hypervisor with full virtualization.
-
-### Storage Resources
-
-The system contains a 20G virtual disk named `/dev/vda`. The main partition `/dev/vda1` provides 19G of storage and is mounted at `/`.
-
-### Networking Resources
-
-The primary network interface is `enp1s0`, which uses the IPv4 address `172.30.1.2/24`. The system also has a Docker network interface using `172.17.0.1/16`. The default gateway is `172.30.1.1`.
-
-### Operating System
-
-The server runs Ubuntu 24.04.4 LTS with Linux kernel version `6.8.0-138-generic`.
-
-### Identity and Access Management
-
-Identity and access management controls access to cloud resources by determining which users and services can access resources and what actions they are permitted to perform.
-
-The KillerCoda investigation did not provide specific cloud IAM users, roles, or permissions, so no specific IAM configuration is claimed in this report.
-
 ## Skills Learned
 
 I learned how to investigate a Linux server using command-line tools and interpret system information. I identified the operating system, kernel, CPU, memory, storage, filesystems, hostname, network interfaces, IP addresses, and routing information.
