@@ -37,7 +37,7 @@ Swap:          1.0Gi          0B       1.0Gi
 ```
 
 ## Disk Capacity
-
+```
 Filesystem      Size  Used Avail Use% Mounted on
 tmpfs           191M 1000K  190M   1% /run
 /dev/vda1        19G  5.4G   13G  30% /
@@ -45,18 +45,10 @@ tmpfs           952M   84K  952M   1% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
 /dev/vda16      881M  117M  703M  15% /boot
 /dev/vda15      105M  6.2M   99M   6% /boot/efi
-
-## Virtual Disk Layout
-
-NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
-vda     253:0    0   20G  0 disk
-|-vda1  253:1    0   19G  0 part /
-|-vda14 253:14   0    4M  0 part
-|-vda15 253:15   0  106M  0 part /boot/efi
-`-vda16 259:0    0  913M  0 part /boot
+```
 
 ## Mounted File Systems
-
+``` text
 sysfs        on  /sys                      type  sysfs        (rw,nosuid,nodev,noexec,relatime)
 proc         on  /proc                     type  proc         (rw,nosuid,nodev,noexec,relatime)
 udev         on  /dev                      type  devtmpfs     (rw,nosuid,relatime,size=954836k,nr_inodes=238709,mode=755,inode64)
@@ -79,6 +71,7 @@ configfs     on  /sys/kernel/config        type  configfs        (rw,nosuid,node
 /dev/vda16   on  /boot                     type  ext4           (rw,relatime)
 /dev/vda15   on  /boot/efi                 type  vfat           (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso-8859-1,shortname=mixed,errors=remount-ro)
 /binfmt_misc on  /proc/sys/fs/binfmt_misc  type  binfmt_misc     (rw,nosuid,nodev,noexec,relatime)
+```
 
 ## hostname
 ubuntu
