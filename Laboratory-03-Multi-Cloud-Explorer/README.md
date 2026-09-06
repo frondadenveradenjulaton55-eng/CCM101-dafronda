@@ -14,7 +14,7 @@ This command provides details about the installed Linux distribution, including 
 
 ### Terminal Evidence 1 – Operating System
 
-![KillerCoda Terminal 1 - Operating System](screenshots/killercoda-terminal-1.png)
+![KillerCoda Terminal 1 - Operating System](screenshots/killercoda-terminal1.png)
 
 ---
 
@@ -26,7 +26,7 @@ This command provides details about the system processor, such as its architectu
 
 ### Terminal Evidence 2 – CPU Information
 
-![KillerCoda Terminal 2 - CPU Information](screenshots/killercoda-terminal-2.png)
+![KillerCoda Terminal 2 - CPU Information](screenshots/killercoda-terminal2.png)
 
 ---
 
@@ -38,7 +38,7 @@ This command shows the total, used, free, and available memory in an easy-to-rea
 
 ### Terminal Evidence 3 – Memory
 
-![KillerCoda Terminal 3 - Memory](screenshots/killercoda-terminal-3.png)
+![KillerCoda Terminal 3 - Memory](screenshots/killercoda-terminal3.png)
 
 ---
 
@@ -50,7 +50,7 @@ This command shows the total disk capacity, used space, available space, and per
 
 ### Terminal Evidence 4 – Disk Space
 
-![KillerCoda Terminal 4 - Disk Space](screenshots/killercoda-terminal-4.png)
+![KillerCoda Terminal 4 - Disk Space](screenshots/killercoda-terminal4.png)
 
 ---
 
