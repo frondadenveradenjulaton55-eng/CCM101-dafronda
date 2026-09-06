@@ -1,4 +1,3 @@
-# Mission 3 – Multi-Cloud Explorer
 
 ## Checkpoint 7 – Linux Investigation Using KillerCoda
 
@@ -12,7 +11,7 @@ The following command was used to identify the Linux distribution and version:
 
 This command provides details about the installed Linux distribution, including its name and version.
 
-### Terminal Evidence 1 – Operating System
+### Evidence 1 – Operating System
 
 ![KillerCoda Terminal 1 - Operating System](screenshots/killercoda-terminal1.png)
 
@@ -24,7 +23,7 @@ The following command was used to examine the CPU information of the Linux envir
 
 This command provides details about the system processor, such as its architecture, CPU count, and other processor specifications.
 
-### Terminal Evidence 2 – CPU Information
+### Evidence 2 – CPU Information
 
 ![KillerCoda Terminal 2 - CPU Information](screenshots/killercoda-terminal2.png)
 
@@ -36,7 +35,7 @@ The following command was used to examine the system's memory:
 
 This command shows the total, used, free, and available memory in an easy-to-read format.
 
-### Terminal Evidence 3 – Memory
+### Evidence 3 – Memory
 
 ![KillerCoda Terminal 3 - Memory](screenshots/killercoda-terminal3.png)
 
@@ -48,7 +47,7 @@ The following command was used to examine the disk space of the Linux environmen
 
 This command shows the total disk capacity, used space, available space, and percentage of disk usage for mounted file systems.
 
-### Terminal Evidence 4 – Disk Space
+### Evidence 4 – Disk Space
 
 ![KillerCoda Terminal 4 - Disk Space](screenshots/killercoda-terminal4.png)
 
@@ -58,10 +57,10 @@ This command shows the total disk capacity, used space, available space, and per
 
 | System Information | Command Used | Result |
 |---|---|---|
-| Operating System | `cat /etc/os-release` | See Terminal Evidence 1 |
-| CPU Information | `lscpu` | See Terminal Evidence 2 |
-| Memory | `free -h` | See Terminal Evidence 3 |
-| Disk Space | `df -h` | See Terminal Evidence 4 |
+| Operating System | `cat /etc/os-release` |Evidence 1 |
+| CPU Information | `lscpu` |Evidence 2 |
+| Memory | `free -h` | Evidence 3 |
+| Disk Space | `df -h` | Evidence 4 |
 
 ---
 
