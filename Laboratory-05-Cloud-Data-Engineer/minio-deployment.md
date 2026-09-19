@@ -64,7 +64,7 @@ The bucket was used to store the test object uploaded during the activity.
 
 ## File Upload
 
-After creating the `client-photos` bucket, I uploaded a sample image or text file into the bucket. The uploaded file confirmed that the MinIO object storage service was functioning.
+After creating the `client-photos` bucket, I uploaded a sample image  into the bucket. The uploaded file confirmed that the MinIO object storage service was functioning.
 
 ## Screenshots
 
